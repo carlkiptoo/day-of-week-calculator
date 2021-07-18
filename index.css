@@ -1,7 +1,7 @@
 body {
-  background-color: aqua;
-  background-image: -moz-linear-gradient(blue);
-}
+  background-color: lightcyan;
+  backface-visibility: inherit;
+  opacity: 3;
 h1 {
   text-align: center;
 }
@@ -11,5 +11,6 @@ p {
   font-display: 100%;
 }
 form {
-  align-items: center;
+  background-attachment: ;
+  background-color: khaki;
 }

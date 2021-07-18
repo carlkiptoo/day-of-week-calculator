@@ -5,3 +5,4 @@ d > 31
 let month = m
 m <= 0
 m > 12
+console.log(date, month)
