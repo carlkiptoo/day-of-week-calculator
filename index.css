@@ -1,0 +1,9 @@
+.body {
+  color: orange;
+  font-style: bold;
+  align-self: center;
+}
+.para {
+  color: black;
+  background-color: azure;
+}
