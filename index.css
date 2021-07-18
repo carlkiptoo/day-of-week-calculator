@@ -1,9 +1,6 @@
-.body {
-  color: orange;
-  font-style: bold;
-  align-self: center;
+body {
+  background-color: aqua;
 }
-.para {
-  color: black;
-  background-color: azure;
+h1 {
+  text-align: center;
 }
