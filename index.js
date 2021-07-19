@@ -6,7 +6,7 @@ let month = m
 m <= 0
 m > 12
 console.log(date, month)
-// for males
+// for male
 monday = kwadwo
 tuesday = kwabena
 wednesday = kwaku
@@ -14,3 +14,11 @@ thursday = yaw
 friday = kofi
 saturday = kwame
 sunday = kwasi
+// for female
+monday = adwoa
+tuesday = abenaa
+wednesday = akua
+thursday = yaa
+friday = afua
+saturday = Ama 
+sunday = akosua
