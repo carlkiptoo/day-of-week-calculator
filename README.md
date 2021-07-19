@@ -23,4 +23,4 @@ The portfolio has no bugs
 carlos.kirui@student.moringaschool.com
 ### License
 https://github.com/carlkiptoo/day-of-week-calculator/blob/gh-pages/licence/licence
-Copyright (c) {2021} **{CARLOS KIRUI}**
+Copyright (c) {2021} **{KIPTOO CARLOS}**
