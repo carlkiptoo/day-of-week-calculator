@@ -1,15 +1,8 @@
 body {
   background-color: lightcyan;
   backface-visibility: inherit;
-  opacity: 3;
-  font-size: 20px;
-
-p {
-  font-family:sans-serif;
-  font-style: initial;
-  font-display: 100%;
-  
-}
+  opacity: 3;  
+    }
 form {
   background-color: khaki;
 }
@@ -17,4 +10,8 @@ h1 {
   text-decoration-color: lightseagreen;
   color: antiquewhite;
   background-color: black;
+}
+form {
+  text-align: center;
+  color: blueviolet;
 }
