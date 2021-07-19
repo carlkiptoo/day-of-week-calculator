@@ -22,5 +22,5 @@ The portfolio has no bugs
 ## Support and contact details
 carlos.kirui@student.moringaschool.com
 ### License
-https://github.com/carlkiptoo/portfolio.landing/blob/gh-pages/licence/licence
+https://github.com/carlkiptoo/day-of-week-calculator/blob/gh-pages/licence/licence
 Copyright (c) {2021} **{CARLOS KIRUI}**
