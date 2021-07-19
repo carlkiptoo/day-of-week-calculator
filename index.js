@@ -29,3 +29,4 @@ var day = dd
 var modulusFunction = mod 
 var weekDay = d 
 d=(((cc/4)-2*cc-1)+((5*yy/4))+((26*)mm+1))10+dd mod7
+console.log(d)
