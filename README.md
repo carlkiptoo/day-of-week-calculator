@@ -6,7 +6,7 @@ it also assigns an Akan name depending to the gender of the child.
 Akan names are derived from ghanian culture and are given according to the day of the week a child was born
 ## Setup instructions
 * Clone the repository
-* git clone https://github.com/carlkiptoo/day-of-week-calculator.git
+* click nifty-heyrovsky-2e6c57.netlify.app
 * Use favorite browser to open project
 * Go through the landing page
 * Ensure device has internet access
