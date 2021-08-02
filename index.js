@@ -1,81 +1,95 @@
-var uname=document.getElementById('name');
-var mm=document.getElementById('month');
-var dd=document.getElementById('date');
-var cc=document.getElementById('century');
-var yy=document.getElementById('year');
-var gender=document.getElementById('gender');
+let dayNames = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+let maleNames = ['kwasi', 'kwado', 'kwabena', 'kwaku', 'yaw', 'kofi', 'kwame']
+let femaleNames = ['akosua', 'adwoa', 'abenaa', 'akua', 'yaa', 'afua', 'ama']
+
+
+var nameInput=document.getElementById('name').value;
+var monthInput=document.getElementById('month').value;
+var dayInput=document.getElementById('date').value;
+var yearInput=document.getElementById('year').value;
+var gender=document.getElementsByClassName('gender').value;
 
 function mainer(){
-    if(uname.value==''){
-        alert("Usename cant be blank");
+    if(nameInput==''){
+        alert("Username cant be blank");
         uname.focus();  
-        return false;
+        
     }
-    if(mm.value=='' || mm.value>12 || mm.value<=0 ){
+    else if(monthInput=='' || monthInput>12 || monthInput<=0 ){
         alert('Input a valid month');
-        return false;
+        
     }
-    if(dd.value==''||dd.value>31 ||dd.value<=0){
+    else if(dayInput==''||dayInput>31 ||dayInput<=0){
         alert("Input a valid date");
-        return false
+        
     }
-    if(cc.value==''){
-        alert('Input a valid century');
-        return false;
-    }
-    if(yy.value==''){
+    else if(yearInput==''||yearInput>2100 ||yearInput<=1900){
         alert('Input a valid year');
-        return false;
+        
     }
-    if (gender.value==''){
+    else if (gender==''){
         alert('Select a valid gender');
-        return false;
+        return false;}
+        else {
+            alert('data input is valid');
+        }
+}
+    function formulaDay(){
+        var monthInput=document.getElementById('month').value;
+        var dayInput=document.getElementById('date').value;
+        var yearInput=document.getElementById('year').value;
+        var gender=document.getElementsByClassName('gender').value;
+        var tarehe=new Date(yearInput + "/" + monthInput + "/" + dayInput);
+        var other=tarehe.getDay();
+        alert(other);
+        let boy=document.getElementsById('male').checked=== male;
+        alert(boy);
+       //if (genders[0].checked=== true){
+        //   var gender = 'male'
+        //   alert('male');
+       //}
+       //if (genders[1].checked=== true){
+         //  var gender = 'female'
+       //}
+       switch(gender){
+           case 'male':
+               if (tarehe===0){
+                   alert('your Akan name is' + maleNames[0])
+               }if (tarehe===1){
+                alert('your Akan name is' + maleNames[1])
+            }if (tarehe===2){
+                alert('your Akan name is' + maleNames[2])
+            }if (tarehe===3){
+                alert('your Akan name is' + maleNames[3])
+            }if (tarehe===4){
+                alert('your Akan name is' + maleNames[4])
+            }if (tarehe===5){
+                alert('your Akan name is' + maleNames[5])
+            }if (tarehe===6){
+                alert('your Akan name is' + maleNames[6])
+            }
+            break;
+            case 'female':
+                if (resultInput===0){
+                    alert('your Akan name is' + femaleNames[0])
+                }if (resultInput===1){
+                    alert('your Akan name is' + femaleNames[1])
+                }if (resultInput===2){
+                    alert('your Akan name is' + femaleNames[2])
+                }if (resultInput===3){
+                    alert('your Akan name is' + femaleNames[3])
+                }if (resultInput===4){
+                    alert('your Akan name is' + femaleNames[4])
+                }if (resultInput===5){
+                    alert('your Akan name is' + femaleNames[5])
+                }if (resultInput===6){
+                    alert('your Akan name is' + femaleNames[6])
+                }
+                break;
+                default:
+       }
     }
     
-    
-    var d = math.floor(( ( (cc.value/4) -2*cc.value-1) + ((5*yy.value/4) ) + ((26*(mm+1)/10)) + DD ) % 7);
-    alert('QUOSHENT '+d);
-    
-
-}
-
-
-
-
-
-
-
-
-
-// let day = monday, tuesday, wednesday, thursday, friday, saturday, sunday
-// let date = d
-// d <= 0
-// d > 31
-// let month = m
-// m <= 0
-// m > 12
-// console.log(date, month)
-// // for male
-// monday = kwadwo
-// tuesday = kwabena
-// wednesday = kwaku
-// thursday = yaw
-// friday = kofi
-// saturday = kwame
-// sunday = kwasi
-// // for female
-// monday = adwoa
-// tuesday = abenaa
-// wednesday = akua
-// thursday = yaa
-// friday = afua
-// saturday = Ama 
-// sunday = akosua
-// var centuryDigits = cc 
-// var yearDigits = yy 
-// var month = mm 
-// var day = dd 
-// var modulusFunction = mod 
-// var weekDay = d 
-// d=(((cc/4)-2*cc-1)+((5*yy/4))+((26*)mm+1))10+dd mod7
-// console.log(d)
+    function mainer(){
+        formulaDay()
+    }
