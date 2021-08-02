@@ -1,35 +1,45 @@
 <html lang="en">
+
 <head>
-<link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <!--<meta name="viewport" content="width=device-width>, initial-scale=1.0">-->
   <title>Document</title>
-<link rel="stylesheet" href="./bootstrap.css/">
-<link rel="stylesheet" href="./index.css">
+  <!-- <link rel="stylesheet" href="./bootstrap.css/">-->
+
 </head>
+
 <body>
-  <h1>DAY OF THE WEEK CALCULATOR</h1>
-  <p>Alot of people often wonder about the day of the week they were born in.</p>
-  <p>This websites helps identify the day of the week someone was born in.</p>
-  <p>It also allocates an Akan name depending on the gender of the child.</p>
-  <form>
-    <h2>Name</h2>
-    <label for="firstName">First Name:</label><br>
-    <input type="text" name="firstname"> <br>
-    <label for="lastName">Last Name:</label><br>
-    <input type="text" name="lastname"><br>
-    <h3>Birthday</h2>
-    <p>Month number (1-12): <br><input type="text" name="month"></p>
-    <p>Date number (1-31): <br><input type="text" name="date"></p>
-    <p>Year <br><input type="text" name="year"></p>
-    <label for="gender">Gender:</label><br>
-    <input type="text" name="gender"><br>
-    <input type="submit" value="Submit">
-  </form>
-  <h4>Contacts</h4>
-  <p>Email: <li>carlos.kirui@student.moringaschool.com</li>
-  <li>0703746070</li></p>
-  <script src="index.js"></script>
+  <div class="back">
+    <h1>DAY OF THE WEEK CALCULATOR</h1>
+    <p>Alot of people often wonder about the day of the week they were born in.</p>
+    <p>This websites helps identify the day of the week someone was born in.</p>
+    <p>It also allocates an Akan name depending on the gender of the child.</p>
+    <form>
+      <h2>Name</h2>
+      <label for="firstName">First Name:</label>
+      <input type="text" name="firstname" id="name"> <br><br>
+      <label for="lastName">Last Name:</label>
+      <input type="text" name="lastname"><br>
+      <h3>Birthday</h2>
+        <p>Month number: <input type="text" name="month" id="month"></p>
+        <p>Date number: <input type="text" name="date" id="date"></p>
+        <p>Year <input type="text" name="year" id="year"></p>
+        <label for="gender">Gender:</label>
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="male" class="gender">
+        <label for="gender">Female</label>
+        <input type="radio" name="gender" id="female" class="gender"><br>
+        <button type="submit" onclick="mainer()">Submit</button>
+    </form>
+    <h4>Contacts</h4>
+    <p>Email: <li>carlos.kirui@student.moringaschool.com</li>
+    </p>
+    <p>Phone:<li>0703746070</li>
+    </p>
+    <script src="index.js"></script>
+  </div>
 </body>
+
 </html>
